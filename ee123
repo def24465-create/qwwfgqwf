@@ -116,7 +116,7 @@ RunService.RenderStepped:Connect(function()
             local prompt = nearestPart:FindFirstChildWhichIsA("ProximityPrompt")
             if prompt then
                 prompt:InputHoldBegin()
-                task.wait(1)
+                task.wait(3)
                 prompt:InputHoldEnd()
             end
         end)
